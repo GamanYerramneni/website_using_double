@@ -88,7 +88,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-custom">
   <a class="navbar-brand" href="#">Sony</a>
-  <!-- Place this part below the "navbar-brand" for better visibility -->
+  <!-- Toggle for Dark/Light mode -->
   <div id="themeSwitcher" class="toggle-theme">Switch to Dark Mode</div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -107,7 +107,51 @@
   </div>
 </nav>
 
-<!-- ... Rest of the body, carousel, product section ... -->
+<!-- Product Listing -->
+<div class="container product-container">
+  <div class="row">
+    <!-- Dummy Product 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="product">
+        <img src="product-placeholder-1.jpg" alt="Product 1">
+        <h5>Product 1</h5>
+        <p>Product 1 Description</p>
+      </div>
+    </div>
+    <!-- Dummy Product 2 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="product">
+        <img src="product-placeholder-2.jpg" alt="Product 2">
+        <h5>Product 2</h5>
+        <p>Product 2 Description</p>
+      </div>
+    </div>
+    <!-- Dummy Product 3 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="product">
+        <img src="product-placeholder-3.jpg" alt="Product 3">
+        <h5>Product 3</h5>
+        <p>Product 3 Description</p>
+      </div>
+    </div>
+    <!-- Dummy Product 4 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="product">
+        <img src="product-placeholder-4.jpg" alt="Product 4">
+        <h5>Product 4</h5>
+        <p>Product 4 Description</p>
+      </div>
+    </div>
+    <!-- Dummy Product 5 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="product">
+        <img src="product-placeholder-5.jpg" alt="Product 5">
+        <h5>Product 5</h5>
+        <p>Product 5 Description</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="footer-custom">
@@ -126,7 +170,7 @@
 <script>
 document.getElementById('themeSwitcher').addEventListener('click', function() {
   document.body.classList.toggle('light-mode');
-  this.textContent = document.body.classList.contains('light-mode') ? 'Switch to Dark Mode' : 'Switch to Light Mode';
+  this.textContent = document.body.classList.contains('light-mode') ? 'Switch to Light Mode' : 'Switch to Dark Mode';
 });
 </script>
 </body>
